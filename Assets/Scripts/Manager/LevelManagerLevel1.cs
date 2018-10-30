@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 // Manages Level 1
 public class LevelManagerLevel1 : MonoBehaviour {
+    public GameObject note;
     // Add important gameobjects
     [SerializeField]
     private GameObject player;
@@ -38,12 +39,17 @@ public class LevelManagerLevel1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        Vector3 famPos = new Vector3(0, 0, 0);
         // Reset the scene on key down R
         if (Input.GetKeyDown(KeyCode.R)) {
             SceneManager.LoadScene(1);
         }
         if (Input.GetKeyDown(KeyCode.D)) {
             AddScore(1);
+        }
+        if (Input.GetKeyDown("space"))
+        {
+            Instantiate(note, famPos, Quaternion.identity);
         }
     }
 
