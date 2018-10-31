@@ -10,7 +10,8 @@ public class Mprojectile : MonoBehaviour {
     void Start () {
         Invoke("DestroyFamilier", 5);
         rb = GetComponent<Rigidbody>();
-        rb.AddForce(new Vector3(1, 0, 0));
+        rb.useGravity = false;
+        rb.AddForce(new Vector3(0, 0, 1000));
     }
 	
 	// Update is called once per frame

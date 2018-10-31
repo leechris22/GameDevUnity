@@ -39,7 +39,7 @@ public class LevelManagerLevel1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Vector3 famPos = new Vector3(0, 0, 0);
+        Vector3 famPos = new Vector3(0, 1, 0);
         // Reset the scene on key down R
         if (Input.GetKeyDown(KeyCode.R)) {
             SceneManager.LoadScene(1);
@@ -47,9 +47,13 @@ public class LevelManagerLevel1 : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.D)) {
             AddScore(1);
         }
-        if (Input.GetKeyDown("space"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            Instantiate(note, famPos, Quaternion.identity);
+            note = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            note.name = "note";
+            note.transform.position = famPos;
+            note.AddComponent<Rigidbody>();
+            note.AddComponent<Mprojectile>();
         }
     }
 
