@@ -10,7 +10,6 @@ public class Mprojectile : MonoBehaviour {
     void Start () {
         Invoke("DestroyFamilier", 5);
         rb = GetComponent<Rigidbody>();
-        rb.useGravity = false;
         rb.AddForce(new Vector3(0, 0, 1000));
     }
 	
