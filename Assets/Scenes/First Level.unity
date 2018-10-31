@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4482447, g: 0.49827164, b: 0.5755807, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824535, g: 0.49827206, b: 0.5755818, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -525,6 +525,7 @@ GameObject:
   - component: {fileID: 45229065}
   - component: {fileID: 45229064}
   - component: {fileID: 45229063}
+  - component: {fileID: 45229067}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -609,6 +610,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &45229067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 45229062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 336cb44d6b7f5c147bff7558c0af92ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!1 &152817867
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,6 +1732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba20e18008b8e04490966a4ce030e23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  note: {fileID: 0}
   player: {fileID: 0}
   enemy: {fileID: 0}
   scoretext: {fileID: 2059913266}
@@ -2237,7 +2251,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1741264771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 336cb44d6b7f5c147bff7558c0af92ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 632cae734cc8f5c46beb8f76fba2d148, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 31219623}
