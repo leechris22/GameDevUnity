@@ -766,9 +766,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 253989151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1de618daa6d96304f93eade994bb4148, type: 3}
+  m_Script: {fileID: 11500000, guid: 6140886ee19d90641a21255fc861df8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 10
 --- !u!114 &253989159
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2248,7 +2249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba20e18008b8e04490966a4ce030e23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  note: {fileID: 0}
   player: {fileID: 0}
   enemy: {fileID: 0}
   playerUI: {fileID: 285326434}
@@ -2777,7 +2777,6 @@ GameObject:
   - component: {fileID: 1741264773}
   - component: {fileID: 1741264772}
   - component: {fileID: 1741264775}
-  - component: {fileID: 1741264776}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
