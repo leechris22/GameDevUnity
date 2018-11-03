@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
-	public float speed = 1.0f;
-	public float jumpForce = 1.0f;
+	public float speed = 2.0f;
+	public float jumpForce = 5.0f;
 	private Rigidbody rb;
 	private bool isGrounded = false;
 	private bool canJump = false;
