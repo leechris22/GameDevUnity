@@ -44,6 +44,7 @@ public class PlayerController : MonoBehaviour {
 		float moveVertical = Input.GetAxis("Vertical");
 		Vector3 movement = new Vector3(moveHorizontal, rb.velocity.y/speed, moveVertical);
 		rb.velocity = movement * speed;
+		transform.rotation = Quaternion.LookRotation(movement);
 		// Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
 		// rb.AddForce(movement * speed);
 
