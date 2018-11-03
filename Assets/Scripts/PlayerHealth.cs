@@ -12,7 +12,7 @@ public class PlayerHealth : MonoBehaviour {
     [SerializeField]
     private Text healthText;
     [SerializeField]
-    private LevelManagerLevel1 levelManager;
+    private LevelManager levelManager;
 
     // Set current health to max health
     private void Start () {
