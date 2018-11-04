@@ -348,7 +348,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6140886ee19d90641a21255fc861df8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  boss: {fileID: 253989151}
+  speed: 2
+  jumpForce: 5
 --- !u!54 &31219629
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -933,15 +935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0215763f937b7394fb48cd77a9305628, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxSpeed: 5
-  maxAcceleration: 5
-  targetRadius: 1
-  slowRadius: 5
-  timeToTarget: 0.1
-  Path:
-  - {x: 0, y: 0.5, z: 5}
-  - {x: 0, y: 0.5, z: -5}
-  current: 0
 --- !u!114 &208250848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -954,7 +947,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 253989156}
-  state: 2
+  ai: []
 --- !u!1 &253989151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1721,11 +1714,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   enemy: {fileID: 0}
-  scoretext: {fileID: 2059913266}
   playerUI: {fileID: 285326434}
+  enemyUI: {fileID: 0}
+  nextLevel: {fileID: 0}
   gameOver: {fileID: 1475259486}
-  highScoreText: {fileID: 44107234}
-  currScoreText: {fileID: 42923361}
 --- !u!4 &1248181495
 Transform:
   m_ObjectHideFlags: 0
@@ -2237,7 +2229,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1741264771}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 336cb44d6b7f5c147bff7558c0af92ce, type: 3}
+  m_Script: {fileID: 11500000, guid: 6ecb09a1e12cb4c40a73e4c795404361, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 31219623}
