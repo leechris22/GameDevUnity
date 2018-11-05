@@ -54,7 +54,7 @@ public class PlayerCircularMovement : MonoBehaviour {
         if (Input.GetKey(KeyCode.DownArrow)) {
             offset = offset + (normalizedOffset * 0.5f);
         }
-		transform.position = boss.transform.position + offset;
+		transform.position = new Vector3(boss.transform.position.x + offset.x, transform.position.y, boss.transform.position.z + offset.z);
 		transform.LookAt(boss.transform.position);
 
 		/* Player jump */
