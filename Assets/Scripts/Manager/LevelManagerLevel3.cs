@@ -4,23 +4,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-// Manages Level 1
-public class LevelManagerLevel1 : LevelManager {
+// Manages Level 3
+public class LevelManagerLevel3 : LevelManager {
     // UI transitions
     [SerializeField]
-    private GameObject nextLevel;
-
+    private GameObject ending;
 
     // Use this for initialization
-    void Start () {
-		
-	}
+    void Start() {
+
+    }
 
     // Events when the game ends
     override public void NextLevel() {
         playerUI.SetActive(false);
         enemyUI.SetActive(false);
-        nextLevel.SetActive(true);
-        Data.level2 = true;
+        ending.SetActive(true);
     }
 }
