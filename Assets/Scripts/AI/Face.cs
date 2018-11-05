@@ -8,6 +8,6 @@ public class Face : AI {
     override public void Output(Vector3 target) {
         Vector3 direction = transform.InverseTransformPoint(target);
         float angle = Mathf.Atan2(direction.x, direction.z) * Mathf.Rad2Deg;
-        player.MoveRotation(player.rotation * Quaternion.Euler(new Vector3(0, angle, 0) * Time.deltaTime));
+        player.MoveRotation(player.rotation * Quaternion.Euler(new Vector3(0, angle, 0) * Time.deltaTime * 50));
     }
 }

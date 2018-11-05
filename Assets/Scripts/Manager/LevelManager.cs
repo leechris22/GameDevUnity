@@ -26,7 +26,7 @@ public class LevelManager : MonoBehaviour {
 	}
 
     // Update is called once per frame
-    virtual public void Update () {
+    virtual protected void Update () {
         // Reset the scene on key down R
         if (Input.GetKeyDown(KeyCode.R)) {
             SceneManager.LoadScene(1);
