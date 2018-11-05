@@ -821,7 +821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 0.392}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.7058824}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -858,6 +858,7 @@ GameObject:
   - component: {fileID: 394485158}
   - component: {fileID: 394485157}
   - component: {fileID: 394485155}
+  - component: {fileID: 394485163}
   m_Layer: 12
   m_Name: TempEnemy
   m_TagString: Untagged
@@ -987,6 +988,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &394485163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 394485154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a3e201013b851d4f80db4a4845a99a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attack: {fileID: 0}
 --- !u!1 &569125030
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,8 +2255,8 @@ MonoBehaviour:
   enemy: {fileID: 0}
   playerUI: {fileID: 285326434}
   enemyUI: {fileID: 1154609061}
-  nextLevel: {fileID: 910532519}
   gameOver: {fileID: 1475259486}
+  nextLevel: {fileID: 910532519}
 --- !u!4 &1248181495
 Transform:
   m_ObjectHideFlags: 0

@@ -39,14 +39,16 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     // Initialize death event when health reaches 0
-    private void Death() {
+    public void Death() {
         levelManager.GameOver();
+        this.gameObject.SetActive(false);
     }
 
     // On collision with bullet, take damage
     private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.CompareTag("EnemyBullet")) {
             Damaged(1);
+            Destroy(collision.gameObject);
         }
     }
 }
