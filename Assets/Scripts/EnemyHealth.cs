@@ -50,4 +50,14 @@ public class EnemyHealth : MonoBehaviour {
             Destroy(collision.gameObject);
         }
     }
+
+    // Health accessor function
+    public int getHealth() {
+        return currHealth;
+    }
+
+    // Max health accessor function
+    public int getMaxHealth() {
+        return maxHealth;
+    }
 }
