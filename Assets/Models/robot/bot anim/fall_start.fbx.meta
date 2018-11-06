@@ -1,14 +1,27 @@
 fileFormatVersion: 2
-guid: dc87e6c8f1a3ba14cbd5ef5ad205ce68
+guid: 8de62de57d0cfa442b3d8ca78ce88e9f
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube1
+    100000: e_anten
+    100002: E_handle
+    100004: //RootNode
+    100006: hip
+    100008: robot:pCylinder13
+    100010: S_anten
+    100012: S_handle
+    400000: e_anten
+    400002: E_handle
+    400004: //RootNode
+    400006: hip
+    400008: robot:pCylinder13
+    400010: S_anten
+    400012: S_handle
+    2100000: robot_aiStandardSurface1
+    2300000: robot:pCylinder13
+    3300000: robot:pCylinder13
+    4300000: robot:pCylinder13
+    7400000: Take 001
     9500000: //RootNode
   externalObjects: {}
   materials:

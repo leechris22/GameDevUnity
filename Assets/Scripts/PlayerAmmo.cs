@@ -21,6 +21,10 @@ public class PlayerAmmo : MonoBehaviour {
         note = Instantiate<GameObject>(noteprefab);
         note.name = "note";
         note.transform.position = this.gameObject.transform.position;
+        note.transform.rotation = this.gameObject.transform.rotation;
+        Vector3 face = note.transform.forward;
+        face.y = 0;
+        note.GetComponent<Rigidbody>().AddForce(face * 1000);
         yield return new WaitForSeconds(fireInterval);
         allowFire = true;
     }

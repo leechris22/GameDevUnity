@@ -1,22 +1,9 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 8008a7c7bc92e444bb7093dbd4648c74
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     2186277476908879412: ImportLogs
-=======
-guid: 272ba60198b3e074690cd13ef2699bab
-ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2100000: lambert1
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube1
->>>>>>> Stashed changes
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -94,11 +81,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-<<<<<<< Updated upstream
   animationType: 2
-=======
-  animationType: 0
->>>>>>> Stashed changes
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
