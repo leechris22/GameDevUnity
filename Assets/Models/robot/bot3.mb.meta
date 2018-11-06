@@ -1,28 +1,8 @@
 fileFormatVersion: 2
-guid: 705755b6042dc174f8e32d54fcb3cfe2
+guid: c7df42215fe8f0443a57721b74f258cc
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: e_anten
-    100004: E_handle
-    100006: hip
-    100008: robot:pCylinder13
-    100010: S_anten
-    100012: S_handle
-    400000: //RootNode
-    400002: e_anten
-    400004: E_handle
-    400006: hip
-    400008: robot:pCylinder13
-    400010: S_anten
-    400012: S_handle
-    2100000: robot_aiStandardSurface1
-    2300000: robot:pCylinder13
-    3300000: robot:pCylinder13
-    4300000: robot:pCylinder13
-    7400000: Take 001
-    9500000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -76,7 +56,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

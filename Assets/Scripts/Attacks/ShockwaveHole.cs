@@ -23,7 +23,6 @@ public class ShockwaveHole : Attack {
                 temphole += size;
             }
         }
-        print(temphole);
         
         // Create a regular polygon with 'size' vertices and 'spacing' side length
         float radius = spacing / (2 * Mathf.Sin(Mathf.PI / size));
