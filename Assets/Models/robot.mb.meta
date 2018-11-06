@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< Updated upstream
 guid: 17ef0ecb99e066d49b7dc59d701d022b
-ModelImporter:
-  serializedVersion: 23
-  fileIDToRecycleName:
-    2186277476908879412: ImportLogs
-=======
-guid: e0548961238dcc44293dce7037370291
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -82,7 +75,7 @@ ModelImporter:
     2300000: pCylinder13
     3300000: pCylinder13
     4300000: pCylinder13
->>>>>>> Stashed changes
+    9500000: //RootNode
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -135,7 +128,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -160,11 +153,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-<<<<<<< Updated upstream
   animationType: 2
-=======
-  animationType: 0
->>>>>>> Stashed changes
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
