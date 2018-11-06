@@ -6,14 +6,14 @@ public class CameraMovement : MonoBehaviour
 {
 
     public GameObject player;
+    public GameObject boss;
     private Vector3 offset;
-    private int quadrant;
+    private Vector3 normalizedOffset;
 
     // Use this for initialization
     void Start()
     {
         offset = transform.position - player.transform.position;
-        quadrant = 1;
     }
 
 
@@ -21,16 +21,11 @@ public class CameraMovement : MonoBehaviour
     void LateUpdate()
     {
         // Move the camera
-        if (Input.GetKey(KeyCode.A)) { offset = Quaternion.AngleAxis(5, Vector3.up) * offset; }
-        if (Input.GetKey(KeyCode.D)) { offset = Quaternion.AngleAxis(-5, Vector3.up) * offset; }
-        if (Input.GetKey(KeyCode.W)) {
-            if (offset.y < player.transform.position.y + 10) { offset.y += 1; }
-        }
-        if (Input.GetKey(KeyCode.S)) {
-            if (offset.y > 0) { offset.y -= 1; }
-        }
+        if (Input.GetKey(KeyCode.RightArrow)) { offset = Quaternion.AngleAxis(-1.655f, Vector3.up) * offset; }
+        if (Input.GetKey(KeyCode.LeftArrow)) { offset = Quaternion.AngleAxis(1.655f, Vector3.up) * offset; }
 
         transform.position = player.transform.position + offset;
-        transform.LookAt(player.transform.position);
+        transform.LookAt(boss.transform.position);
+        transform.Rotate(new Vector3(10, 0));
     }
 }
