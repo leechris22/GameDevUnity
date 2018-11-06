@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44824475, g: 0.49827188, b: 0.5755814, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824535, g: 0.49827206, b: 0.5755818, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1269,6 +1269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 759708053}
+  boss: {fileID: 1711313578}
 --- !u!81 &627279099
 AudioListener:
   m_ObjectHideFlags: 0
@@ -2905,6 +2906,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   noteprefab: {fileID: 1482596919406720, guid: 0d3da520df6aee74b94d9cd115b61b56, type: 2}
   attack: {fileID: 1711313579}
+  shockwave: {fileID: 0}
+  wall: {fileID: 0}
 --- !u!114 &1711313583
 MonoBehaviour:
   m_ObjectHideFlags: 0

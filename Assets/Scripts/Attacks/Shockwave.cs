@@ -27,6 +27,7 @@ public class Shockwave : Attack {
             notes[i].transform.Rotate(new Vector3(0, orientation, 0));
             notes[i].GetComponent<Rigidbody>().AddForce(notes[i].transform.forward * 1000);
             orientation += 360 / (float)size;
+            Destroy(notes[i], 3);
         }
 
     }

@@ -13,5 +13,6 @@ public class Attack : MonoBehaviour {
         note.transform.position = transform.position;
         note.transform.rotation = transform.rotation;
         note.GetComponent<Rigidbody>().AddForce(transform.forward * 1000);
+        Destroy(note, 3);
     }
 }
