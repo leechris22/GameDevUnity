@@ -1,100 +1,71 @@
 fileFormatVersion: 2
-guid: 8072eb91a6c583449b2b377f62162347
+guid: 0b0f1f096777b44468740371981c2145
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: collar
-    100002: head
-    100004: hip
-    100006: L_backtoe
-    100008: L_endbend
-    100010: L_finalbend
-    100012: L_foot
-    100014: L_innertoe
-    100016: L_knee
-    100018: L_midbend
-    100020: L_outertoe
-    100022: L_shoulder
-    100024: L_startbend
-    100026: L_tailend
-    100028: L_tailmid
-    100030: L_tailstart
-    100032: L_thigh
-    100034: L_wingtip
-    100036: lowspine
-    100038: M_tailend
-    100040: M_tailmid
-    100042: M_tailstart
-    100044: midneck
-    100046: midspine
-    100048: neck
-    100050: parrot:pCube6
-    100052: R_backtoe
-    100054: R_endbend
-    100056: R_finalbend
-    100058: R_foot
-    100060: R_innertoe
-    100062: R_knee
-    100064: R_midbend
-    100066: R_outertoe
-    100068: R_shoulder
-    100070: R_startbend
-    100072: R_tailend
-    100074: R_tailmid
-    100076: R_tailstart
-    100078: R_thigh
-    100080: R_wingtip
-    100082: //RootNode
-    100084: tailcontrol
-    100086: upperspine
-    400000: collar
-    400002: head
-    400004: hip
-    400006: L_backtoe
-    400008: L_endbend
-    400010: L_finalbend
-    400012: L_foot
-    400014: L_innertoe
-    400016: L_knee
-    400018: L_midbend
-    400020: L_outertoe
-    400022: L_shoulder
-    400024: L_startbend
-    400026: L_tailend
-    400028: L_tailmid
-    400030: L_tailstart
-    400032: L_thigh
-    400034: L_wingtip
-    400036: lowspine
-    400038: M_tailend
-    400040: M_tailmid
-    400042: M_tailstart
-    400044: midneck
-    400046: midspine
-    400048: neck
-    400050: parrot:pCube6
-    400052: R_backtoe
-    400054: R_endbend
-    400056: R_finalbend
-    400058: R_foot
-    400060: R_innertoe
-    400062: R_knee
-    400064: R_midbend
-    400066: R_outertoe
-    400068: R_shoulder
-    400070: R_startbend
-    400072: R_tailend
-    400074: R_tailmid
-    400076: R_tailstart
-    400078: R_thigh
-    400080: R_wingtip
-    400082: //RootNode
-    400084: tailcontrol
-    400086: upperspine
-    2100000: lambert1
-    4300000: parrot:pCube6
+    100000: center
+    100002: E_beak
+    100004: E_tail
+    100006: head
+    100008: hip_J
+    100010: L_backhand
+    100012: L_feather
+    100014: L_foot_J
+    100016: L_foottop_J
+    100018: L_fronthand
+    100020: L_hand
+    100022: L_legTop_J
+    100024: L_shold
+    100026: M_feather
+    100028: M_spine
+    100030: neck
+    100032: pCube9
+    100034: //RootNode
+    100036: R_backhand
+    100038: r_feather
+    100040: R_foot_J
+    100042: R_foottop_J
+    100044: R_fronthand
+    100046: R_hand
+    100048: R_legTop_J
+    100050: R_shold
+    100052: S_tail
+    100054: T_beak
+    100056: U_spine
+    400000: center
+    400002: E_beak
+    400004: E_tail
+    400006: head
+    400008: hip_J
+    400010: L_backhand
+    400012: L_feather
+    400014: L_foot_J
+    400016: L_foottop_J
+    400018: L_fronthand
+    400020: L_hand
+    400022: L_legTop_J
+    400024: L_shold
+    400026: M_feather
+    400028: M_spine
+    400030: neck
+    400032: pCube9
+    400034: //RootNode
+    400036: R_backhand
+    400038: r_feather
+    400040: R_foot_J
+    400042: R_foottop_J
+    400044: R_fronthand
+    400046: R_hand
+    400048: R_legTop_J
+    400050: R_shold
+    400052: S_tail
+    400054: T_beak
+    400056: U_spine
+    2100000: aiStandardSurface1
+    4300000: pCube9
+    7400000: turning
     9500000: //RootNode
-    13700000: parrot:pCube6
+    13700000: pCube9
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -146,7 +117,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
