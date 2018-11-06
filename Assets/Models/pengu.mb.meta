@@ -3,6 +3,69 @@ guid: 54edfaec0e7bfc949aa094db434dcf53
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
+    100000: center
+    100002: E_beak
+    100004: E_tail
+    100006: head
+    100008: hip_J
+    100010: L_backhand
+    100012: L_feather
+    100014: L_foot_J
+    100016: L_foottop_J
+    100018: L_fronthand
+    100020: L_hand
+    100022: L_legTop_J
+    100024: L_shold
+    100026: M_feather
+    100028: M_spine
+    100030: neck
+    100032: pCube9
+    100034: //RootNode
+    100036: R_backhand
+    100038: r_feather
+    100040: R_foot_J
+    100042: R_foottop_J
+    100044: R_fronthand
+    100046: R_hand
+    100048: R_legTop_J
+    100050: R_shold
+    100052: S_tail
+    100054: T_beak
+    100056: U_spine
+    400000: center
+    400002: E_beak
+    400004: E_tail
+    400006: head
+    400008: hip_J
+    400010: L_backhand
+    400012: L_feather
+    400014: L_foot_J
+    400016: L_foottop_J
+    400018: L_fronthand
+    400020: L_hand
+    400022: L_legTop_J
+    400024: L_shold
+    400026: M_feather
+    400028: M_spine
+    400030: neck
+    400032: pCube9
+    400034: //RootNode
+    400036: R_backhand
+    400038: r_feather
+    400040: R_foot_J
+    400042: R_foottop_J
+    400044: R_fronthand
+    400046: R_hand
+    400048: R_legTop_J
+    400050: R_shold
+    400052: S_tail
+    400054: T_beak
+    400056: U_spine
+    2100000: lambert2
+    4300000: pCube9
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: pCube9
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -56,7 +119,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0

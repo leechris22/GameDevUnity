@@ -1,79 +1,28 @@
 fileFormatVersion: 2
-guid: 778123017bb9200449ef1aca10b95bd0
+guid: ca9307dd8f53c2341909b8432763b090
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: head
+    100000: e_anten
+    100002: E_handle
     100004: hip
-    100006: joint1
-    100008: L_backtoe
-    100010: L_foot
-    100012: L_innertoe
-    100014: L_knee
-    100016: L_outtoe
-    100018: L_shoulder
-    100020: L_thigh
-    100022: L_tip_B
-    100024: L_tip_E
-    100026: L_wing
-    100028: lowback
-    100030: midback
-    100032: neck
-    100034: R_backtoe
-    100036: R_foot
-    100038: R_innertoe
-    100040: R_knee
-    100042: R_outtoe
-    100044: R_shoulder
-    100046: R_thigh
-    100048: R_tip_B
-    100050: R_tip_E
-    100052: R_wing
-    100054: tailend
-    100056: tailmid
-    100058: tailstart
-    100060: tailtip
-    100062: tucan:bird:pCube9
-    100064: upback
-    400000: //RootNode
-    400002: head
+    100006: //RootNode
+    100008: robot:pCylinder13
+    100010: S_anten
+    100012: S_handle
+    400000: e_anten
+    400002: E_handle
     400004: hip
-    400006: joint1
-    400008: L_backtoe
-    400010: L_foot
-    400012: L_innertoe
-    400014: L_knee
-    400016: L_outtoe
-    400018: L_shoulder
-    400020: L_thigh
-    400022: L_tip_B
-    400024: L_tip_E
-    400026: L_wing
-    400028: lowback
-    400030: midback
-    400032: neck
-    400034: R_backtoe
-    400036: R_foot
-    400038: R_innertoe
-    400040: R_knee
-    400042: R_outtoe
-    400044: R_shoulder
-    400046: R_thigh
-    400048: R_tip_B
-    400050: R_tip_E
-    400052: R_wing
-    400054: tailend
-    400056: tailmid
-    400058: tailstart
-    400060: tailtip
-    400062: tucan:bird:pCube9
-    400064: upback
-    2100000: lambert1
-    4300000: tucan:bird:pCube9
+    400006: //RootNode
+    400008: robot:pCylinder13
+    400010: S_anten
+    400012: S_handle
+    2100000: robot_aiStandardSurface1
+    2300000: robot:pCylinder13
+    3300000: robot:pCylinder13
+    4300000: robot:pCylinder13
+    7400000: Take 001
     9500000: //RootNode
-    13700000: tucan:bird:pCube9
-    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -125,7 +74,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

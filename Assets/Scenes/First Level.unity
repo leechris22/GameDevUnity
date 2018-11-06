@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44824475, g: 0.49827188, b: 0.5755814, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824535, g: 0.49827206, b: 0.5755818, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -673,6 +673,7 @@ GameObject:
   - component: {fileID: 253989156}
   - component: {fileID: 253989152}
   - component: {fileID: 253989158}
+  - component: {fileID: 253989160}
   - component: {fileID: 253989157}
   - component: {fileID: 253989159}
   m_Layer: 11
@@ -735,7 +736,7 @@ MeshFilter:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 253989151}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &253989155
 Transform:
   m_ObjectHideFlags: 0
@@ -785,7 +786,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 253989151}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6140886ee19d90641a21255fc861df8c, type: 3}
   m_Name: 
@@ -805,6 +806,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireInterval: 0.2
   noteprefab: {fileID: 1253926628956310, guid: 5c9b4e0869206b24e8fbb8ef52a6dcb4, type: 2}
+--- !u!114 &253989160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 253989151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 097fbba77782a61418d0c44e117d0b88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  boss: {fileID: 394485154}
+  speed: 2
+  jumpForce: 8
+  safeDistance: 2
 --- !u!1 &285326434
 GameObject:
   m_ObjectHideFlags: 0
@@ -3130,7 +3146,7 @@ Transform:
   m_GameObject: {fileID: 1595410333}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 1, z: 2}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -3303,13 +3319,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1741264771}
-  m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 5, z: -10}
+  m_LocalRotation: {x: 0.42261827, y: 0, z: 0, w: 0.9063079}
+  m_LocalPosition: {x: 0, y: 10, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 50, y: 0, z: 0}
 --- !u!114 &1741264775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3322,6 +3338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 253989151}
+  boss: {fileID: 394485154}
 --- !u!1 &2031041657
 GameObject:
   m_ObjectHideFlags: 0
