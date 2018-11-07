@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44824475, g: 0.49827188, b: 0.5755814, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824535, g: 0.49827206, b: 0.5755818, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -379,6 +379,73 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &317529565
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1063230281}
+    m_Modifications:
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 41.856
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 41.856
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 41.856
+      objectReference: {fileID: 0}
+    - target: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: a0dc4bb25349fbc46a71ab802ee1cdbe, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16, type: 3}
+  m_IsPrefabAsset: 0
+--- !u!4 &317529566 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400060, guid: 6485cca2d3dc6b74f8dff7bbcfe51c16,
+    type: 3}
+  m_PrefabInternal: {fileID: 317529565}
 --- !u!1 &439668344
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,8 +980,6 @@ MonoBehaviour:
   boss: {fileID: 1063230269}
   speed: 2
   jumpForce: 10
-  safeDistance: 2
-  ground: {fileID: 1263620796}
 --- !u!135 &820780489
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1568,6 +1633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18989f8a620fe946916185860b346b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   size: 50
   spacing: 0
   hole: -1
@@ -1582,6 +1648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d886a811c5b8dd47b2571b3b88ca926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
   size: 50
   spacing: 0
 --- !u!114 &1063230272
@@ -1595,6 +1662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d7240f6063e7e4ebaf1243c903caea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!114 &1063230273
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1610,6 +1678,7 @@ MonoBehaviour:
   attack: {fileID: 1063230270}
   shockwave: {fileID: 0}
   wall: {fileID: 0}
+  firstAttack: 0
 --- !u!114 &1063230274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1683,7 +1752,7 @@ MeshRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1063230269}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1728,7 +1797,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 317529566}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
@@ -2237,9 +2307,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 411fc679012ad8d4bbc08ca18a07ae14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  enemy: {fileID: 0}
   playerUI: {fileID: 2023796215}
   enemyUI: {fileID: 439668344}
   gameOver: {fileID: 1765954721}
+  story: {fileID: 0}
   nextLevel: {fileID: 926540819}
 --- !u!4 &1387557927
 Transform:
