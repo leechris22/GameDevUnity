@@ -19,6 +19,7 @@ public class EnemyPattern : MonoBehaviour {
     float pt1_rate;
     float pt2_rate;
     float pt3_rate;
+    [SerializeField]
 
     private void Start() {
         phase = 1;
@@ -82,18 +83,18 @@ public class EnemyPattern : MonoBehaviour {
     }
 
     private void firstLayer() {
-        attack.Shoot(noteprefab);
-        if (phase != 3) { Invoke("firstLayer", pt1_rate); }
+        attack.Shoot(noteprefab, 0);
+        if (phase == 1) { Invoke("firstLayer", pt1_rate); }
     }
 
     private void secondLayer() {
-        shockwave.Shoot(noteprefab);
+        shockwave.Shoot(noteprefab, 0);
         Invoke("secondLayer", pt2_rate);
     }
 
     private void thirdLayer()
     {
-        attack.Shoot(noteprefab);
+        attack.Shoot(noteprefab, 0);
         Invoke("thirdLayer", pt3_rate);
     }
 }

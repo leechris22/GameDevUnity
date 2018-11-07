@@ -11,7 +11,7 @@ public class Shockwave : Attack {
     private float spacing;
     private GameObject[] notes;
 
-    override public void Shoot(GameObject prefab) {
+    override public void Shoot(GameObject prefab, int hole_center) {
         // Initialize array
         notes = new GameObject[size];
 
