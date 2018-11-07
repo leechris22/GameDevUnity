@@ -10,8 +10,10 @@ public class PlayerCircularMovement : MonoBehaviour {
 	private Rigidbody rb;
 	private bool isGrounded = false;
 	private bool canJump = false;
+    private Animator anim;
 
 	void Start () {
+        anim = GetComponent<Animator>();
 		rb = GetComponent<Rigidbody>();
     }
 
@@ -21,16 +23,27 @@ public class PlayerCircularMovement : MonoBehaviour {
 
 		// Circular movement
 		if (Input.GetKey(KeyCode.LeftArrow)) {
+            anim.SetBool("left", true);
             tempvelocity -= transform.right * speed;
         } else if (Input.GetKey(KeyCode.RightArrow)) {
+            anim.SetBool("right", true);
             tempvelocity += transform.right * speed;
+        } else
+        {
+            anim.SetBool("left", false);
+            anim.SetBool("right", false);
         }
 
         // Forward and backward
         if (Input.GetKey(KeyCode.UpArrow)) {
+            anim.SetBool("forward", true);
             tempvelocity += transform.forward * speed;
         } else if (Input.GetKey(KeyCode.DownArrow) && Vector3.Distance(transform.position, boss.transform.position) < 15) {
+            anim.SetBool("backward", true);
             tempvelocity -= transform.forward * speed;
+        } else {
+            anim.SetBool("forward", false);
+            anim.SetBool("backward", false);
         }
         tempvelocity.y = rb.velocity.y;
         rb.velocity = tempvelocity;
