@@ -5,4 +5,5 @@ using UnityEngine;
 public static class Data {
     public static bool level2 = false;
     public static bool level3 = false;
+    public static int fov = 60;
 }
