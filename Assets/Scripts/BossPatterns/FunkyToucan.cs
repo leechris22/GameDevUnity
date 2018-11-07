@@ -79,10 +79,8 @@ public class FunkyToucan : MonoBehaviour
         {
             phase = 3;
             thirdLayer();
-            for (float i = 1; i < 20; i++)
-            {
-                Invoke("thirdLayer", i / 10f);
-            }
+            Invoke("thirdLayer", 1.74f);
+            Invoke("thirdLayer", 2.12f);
             startMusic();
         }
     }
@@ -128,21 +126,21 @@ public class FunkyToucan : MonoBehaviour
 
     private void secondLayer()
     {
-        attack.Wall(50, 47);
+        attack.Wall(50, 24, false);
         secondAttack = true;
         Invoke("secondLayer", pt2_rate);
     }
 
     private void secondLayer2()
     {
-        attack.Wall(50, 1);
+        attack.Wall(50, 26, false);
         secondAttack = true;
         Invoke("secondLayer2", pt2_rate);
     }
 
     private void secondLayer3()
     {
-        attack.Wall(50, 4);
+        attack.Wall(50, 28, false);
         secondAttack = true;
         Invoke("secondLayer3", pt2_rate);
     }
@@ -156,7 +154,7 @@ public class FunkyToucan : MonoBehaviour
 
     private void thirdLayer()
     {
-        attack.Shoot(-1);
+        attack.Shotgun(15, 15, 15, 1000);
         firstAttack = true;
         Invoke("thirdLayer", pt3_rate);
     }
