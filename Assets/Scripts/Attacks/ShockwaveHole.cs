@@ -13,11 +13,11 @@ public class ShockwaveHole : Attack {
     private int hole;
     private GameObject[] notes;
 
-    override public void Shoot(GameObject prefab) {
+    override public void Shoot(GameObject prefab, int hole_center) {
         // Initialize array and random number generator
         notes = new GameObject[size];
-        int temphole = hole;
-        if (hole == -1) {
+        int temphole = hole_center;
+        if (hole_center == -1) {
             temphole = Random.Range(0, (int)Mathf.Floor(size / 4)) - (int)Mathf.Floor(size / 8);
             if (temphole < 0) {
                 temphole += size;
@@ -28,7 +28,7 @@ public class ShockwaveHole : Attack {
         float radius = spacing / (2 * Mathf.Sin(Mathf.PI / size));
         float orientation = 0;
         for (int i = 0; i < size; i++) {
-            if (i != temphole) {
+            if (i != temphole && i != temphole - 1 && i != temphole + 1) {
                 float x = Mathf.Sin(Mathf.Deg2Rad * orientation) * radius;
                 float z = Mathf.Cos(Mathf.Deg2Rad * orientation) * radius;
                 notes[i] = Instantiate<GameObject>(prefab);
@@ -36,6 +36,7 @@ public class ShockwaveHole : Attack {
                 notes[i].transform.rotation = transform.rotation;
                 notes[i].transform.Rotate(new Vector3(0, orientation, 0));
                 notes[i].GetComponent<Rigidbody>().AddForce(notes[i].transform.forward * 1000);
+                Destroy(notes[i], 3);
             }
             orientation += 360 / (float)size;
         }

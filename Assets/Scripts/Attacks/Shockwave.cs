@@ -11,7 +11,7 @@ public class Shockwave : Attack {
     private float spacing;
     private GameObject[] notes;
 
-    override public void Shoot(GameObject prefab) {
+    override public void Shoot(GameObject prefab, int hole_center) {
         // Initialize array
         notes = new GameObject[size];
 
@@ -27,6 +27,7 @@ public class Shockwave : Attack {
             notes[i].transform.Rotate(new Vector3(0, orientation, 0));
             notes[i].GetComponent<Rigidbody>().AddForce(notes[i].transform.forward * 1000);
             orientation += 360 / (float)size;
+            Destroy(notes[i], 3);
         }
 
     }
