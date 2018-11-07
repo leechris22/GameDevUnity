@@ -2,15 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Story : MonoBehaviour {
+public class Story {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public static bool level1_intro = true;
+	public static bool level2_intro = true;
+	public static bool level3_intro = true;
 }
