@@ -6,6 +6,12 @@ using UnityEngine.UI;
 
 // Base class
 public class LevelManager : MonoBehaviour {
+    // Add important gameobjects
+    [SerializeField]
+    protected GameObject player;
+    [SerializeField]
+    protected GameObject enemy;
+
     // UI transitions
     [SerializeField]
     protected GameObject playerUI;
