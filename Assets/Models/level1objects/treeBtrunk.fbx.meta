@@ -125,7 +125,27 @@ ModelImporter:
     4300012: pSphere48
     4300014: pCube13
     4300016: pCube14
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_baseColor
+    second: {fileID: 2800000, guid: 1091780b2b18e2847aa9151dc1b21843, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_normal
+    second: {fileID: 2800000, guid: 67583b9f8509e534e92dbe661fa18151, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_occlusionRoughnessMetallic
+    second: {fileID: 2800000, guid: 4ed26c0385cd2354a8ca913d6cd03a3e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: trunk_initialShadingGroup_Roughness
+    second: {fileID: 2800000, guid: 962737dcc0fbd4649ad95ab1c761a442, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

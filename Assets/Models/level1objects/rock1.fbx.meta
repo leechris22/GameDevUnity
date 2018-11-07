@@ -9,7 +9,27 @@ ModelImporter:
     2300000: //RootNode
     3300000: //RootNode
     4300000: pCube15
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_Base_Color
+    second: {fileID: 2800000, guid: 6f602b826cb9a614082daeebcf281bc0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_Metallic
+    second: {fileID: 2800000, guid: f2d8d07017496f64c8c263c4247bdfca, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_Normal
+    second: {fileID: 2800000, guid: 4a2f2929057cb4042a5a434b5483f706, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_Roughness
+    second: {fileID: 2800000, guid: 155c6e2069aa354428e05c67c27eb7d1, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

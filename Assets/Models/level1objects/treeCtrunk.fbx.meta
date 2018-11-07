@@ -167,7 +167,27 @@ ModelImporter:
     4300022: pSphere55
     4300024: pSphere56
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water_SG1_Base_Color
+    second: {fileID: 2800000, guid: f31faa6240c24784b9942272d6dd10c5, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water_SG1_Metallic
+    second: {fileID: 2800000, guid: 3e572e2f704032d428a458b3ce95be1a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water_SG1_Normal_OpenGL
+    second: {fileID: 2800000, guid: 4fda54ef7c51aa048b67e60fb6577b84, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Water_SG1_Roughness
+    second: {fileID: 2800000, guid: 1e42bb6a55796cf4796c6e329c009d70, type: 3}
   materials:
     importMaterials: 1
     materialName: 0

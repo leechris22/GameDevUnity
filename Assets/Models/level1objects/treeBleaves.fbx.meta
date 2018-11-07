@@ -55,7 +55,22 @@ ModelImporter:
     2300000: pSphere48
     3300000: pSphere48
     4300000: pSphere48
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_baseColor
+    second: {fileID: 2800000, guid: f33fa117a393ba941b82e409a6501087, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_normal
+    second: {fileID: 2800000, guid: ec7d74e5ee46ee54e911fde1f3cc78e0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_occlusionRoughnessMetallic
+    second: {fileID: 2800000, guid: e8557f2b9d65e4d45905d5e248659722, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
