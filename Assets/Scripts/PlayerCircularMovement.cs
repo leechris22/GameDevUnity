@@ -19,20 +19,9 @@ public class PlayerCircularMovement : MonoBehaviour {
         isGrounded = true;
     }
 
-    void OnCollisionExit() {
-        isGrounded = false;
-    }
-
 	void Update () {
-		if (Input.GetKeyDown(KeyCode.X) && isGrounded) {
-			canJump = true;
-		}
-	}
-
-	void FixedUpdate () {
         transform.LookAt(boss.transform.position);
         Vector3 tempvelocity = Vector3.zero;
-        tempvelocity.y = rb.velocity.y;
 
 		// Circular movement
 		if (Input.GetKey(KeyCode.LeftArrow)) {
@@ -47,12 +36,13 @@ public class PlayerCircularMovement : MonoBehaviour {
         } else if (Input.GetKey(KeyCode.DownArrow)) {
             tempvelocity -= transform.forward * speed;
         }
+        tempvelocity.y = rb.velocity.y;
         rb.velocity = tempvelocity;
 
         /* Player jump */
-        if (canJump) {
+        if (Input.GetKey(KeyCode.X) && isGrounded) {
 			rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
-			canJump = false;
-		}
-	}
+            isGrounded = false;
+        }
+    }
 }
