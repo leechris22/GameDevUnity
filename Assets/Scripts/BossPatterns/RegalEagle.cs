@@ -39,6 +39,9 @@ public class RegalEagle : MonoBehaviour {
     private void Update()
     {
         enemyHealth = GetComponent<EnemyHealth>().getHealth();
+        if (enemyHealth <= 0) {
+            CancelInvoke();
+        }
 /*        if (Input.GetKeyDown(KeyCode.Q))
         {
             attack.Shoot(-1);

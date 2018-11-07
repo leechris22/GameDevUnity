@@ -31,6 +31,9 @@ public class EnemyPattern : MonoBehaviour {
     private void Update()
     {
         enemyHealth = GetComponent<EnemyHealth>().getHealth();
+        if (enemyHealth <= 0) {
+            CancelInvoke();
+        }
         if (firstAttack)
         {
             anim.SetTrigger("shotattack");

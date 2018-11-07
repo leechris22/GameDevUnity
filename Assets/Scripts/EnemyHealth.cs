@@ -47,6 +47,7 @@ public class EnemyHealth : MonoBehaviour {
     private void OnCollisionEnter(Collision collision) {
         if (collision.gameObject.CompareTag("PlayerBullet")) {
             Damaged(1);
+            CancelInvoke();
             Destroy(collision.gameObject);
         }
     }
