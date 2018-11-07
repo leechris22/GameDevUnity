@@ -59,7 +59,6 @@ public class FunkyToucan : MonoBehaviour
             anim.SetTrigger("waveattack");
             secondAttack = false;
         }
-        if (activeMusic != null) { print(activeMusic.time); }
         if (enemyHealth <= (enemyMaxHealth * 2 / 3) && activeMusic != null && activeMusic.time >= 5.99f && phase == 1)
         {
             phase = 2;
