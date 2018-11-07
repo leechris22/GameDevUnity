@@ -167,7 +167,22 @@ ModelImporter:
     4300022: pSphere55
     4300024: pSphere56
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_baseColor
+    second: {fileID: 2800000, guid: b10fa3ab6da3d654caca2ad490c28042, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_normal
+    second: {fileID: 2800000, guid: 5fee189adea7b7f48877b8683a5473f8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: initialShadingGroup_occlusionRoughnessMetallic
+    second: {fileID: 2800000, guid: a76f682c5d57775458ebe9c7cafb4de0, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
