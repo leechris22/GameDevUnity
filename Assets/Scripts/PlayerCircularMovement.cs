@@ -36,7 +36,7 @@ public class PlayerCircularMovement : MonoBehaviour {
         rb.velocity = tempvelocity;
 
         /* Player jump */
-        if (Input.GetKey(KeyCode.X) && isGrounded) {
+        if (Input.GetKey(KeyCode.Space) && isGrounded) {
 			rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
         }
     }

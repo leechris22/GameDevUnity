@@ -21,7 +21,7 @@ public class LevelManagerLevel3 : LevelManager {
         }
 	}
 
-    override protected void Update() {
+    private void Update() {
         if (story.activeSelf && Input.GetKeyDown(KeyCode.Space)) {
             story.SetActive(false);
             Story.level3_intro = false;

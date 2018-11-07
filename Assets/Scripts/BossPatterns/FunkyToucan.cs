@@ -6,8 +6,6 @@ public class FunkyToucan : MonoBehaviour
 {
     Animator anim;
     [SerializeField]
-    protected GameObject noteprefab;
-    [SerializeField]
     private Attack attack;
     private int enemyHealth;
     private int enemyMaxHealth;
