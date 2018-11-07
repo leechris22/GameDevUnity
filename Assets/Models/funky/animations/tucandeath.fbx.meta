@@ -1,81 +1,79 @@
 fileFormatVersion: 2
-guid: 17ef0ecb99e066d49b7dc59d701d022b
+guid: 1bc8c1babde774f4eb292842dc7393ff
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: pCube1
-    100002: pCube2
-    100004: pCube3
-    100006: pCube4
-    100008: pCylinder10
-    100010: pCylinder11
-    100012: pCylinder12
-    100014: pCylinder13
-    100016: pCylinder3
-    100018: pCylinder4
-    100020: pCylinder5
-    100022: pCylinder6
-    100024: pCylinder7
-    100026: pCylinder8
-    100028: pCylinder9
-    100030: pSphere1
-    100032: pSphere2
-    100034: //RootNode
-    100036: transform1
-    100038: transform10
-    100040: transform11
-    100042: transform12
-    100044: transform13
-    100046: transform14
-    100048: transform15
-    100050: transform16
-    100052: transform2
-    100054: transform3
-    100056: transform4
-    100058: transform5
-    100060: transform6
-    100062: transform7
-    100064: transform8
-    100066: transform9
-    400000: pCube1
-    400002: pCube2
-    400004: pCube3
-    400006: pCube4
-    400008: pCylinder10
-    400010: pCylinder11
-    400012: pCylinder12
-    400014: pCylinder13
-    400016: pCylinder3
-    400018: pCylinder4
-    400020: pCylinder5
-    400022: pCylinder6
-    400024: pCylinder7
-    400026: pCylinder8
-    400028: pCylinder9
-    400030: pSphere1
-    400032: pSphere2
-    400034: //RootNode
-    400036: transform1
-    400038: transform10
-    400040: transform11
-    400042: transform12
-    400044: transform13
-    400046: transform14
-    400048: transform15
-    400050: transform16
-    400052: transform2
-    400054: transform3
-    400056: transform4
-    400058: transform5
-    400060: transform6
-    400062: transform7
-    400064: transform8
-    400066: transform9
+    100000: head
+    100002: hip
+    100004: joint1
+    100006: L_backtoe
+    100008: L_foot
+    100010: L_innertoe
+    100012: L_knee
+    100014: L_outtoe
+    100016: L_shoulder
+    100018: L_thigh
+    100020: L_tip_B
+    100022: L_tip_E
+    100024: L_wing
+    100026: lowback
+    100028: midback
+    100030: neck
+    100032: R_backtoe
+    100034: R_foot
+    100036: R_innertoe
+    100038: R_knee
+    100040: R_outtoe
+    100042: R_shoulder
+    100044: R_thigh
+    100046: R_tip_B
+    100048: R_tip_E
+    100050: R_wing
+    100052: tailend
+    100054: tailmid
+    100056: tailstart
+    100058: tailtip
+    100060: tucan:bird:pCube9
+    100062: //RootNode
+    100064: upback
+    400000: head
+    400002: hip
+    400004: joint1
+    400006: L_backtoe
+    400008: L_foot
+    400010: L_innertoe
+    400012: L_knee
+    400014: L_outtoe
+    400016: L_shoulder
+    400018: L_thigh
+    400020: L_tip_B
+    400022: L_tip_E
+    400024: L_wing
+    400026: lowback
+    400028: midback
+    400030: neck
+    400032: R_backtoe
+    400034: R_foot
+    400036: R_innertoe
+    400038: R_knee
+    400040: R_outtoe
+    400042: R_shoulder
+    400044: R_thigh
+    400046: R_tip_B
+    400048: R_tip_E
+    400050: R_wing
+    400052: tailend
+    400054: tailmid
+    400056: tailstart
+    400058: tailtip
+    400060: tucan:bird:pCube9
+    400062: //RootNode
+    400064: upback
     2100000: aiStandardSurface1
-    2300000: pCylinder13
-    3300000: pCylinder13
-    4300000: pCylinder13
+    4300000: tucan:bird:pCube9
+    7400000: death
     9500000: //RootNode
+    13700000: tucan:bird:pCube9
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -127,7 +125,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
+    previousCalculatedGlobalScale: 0.01
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60

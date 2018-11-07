@@ -75,22 +75,22 @@ ModelImporter:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: pengu_pCube9SG_BaseColor
-    second: {fileID: 2800000, guid: 94646d0e211a098408858502ed1b7dfe, type: 3}
+    second: {fileID: 2800000, guid: 0a83e486f61802f44b36a93e16bf2692, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: pengu_pCube9SG_Metallic
-    second: {fileID: 2800000, guid: e29fefaf976fab04e96677f4f5bc4394, type: 3}
+    second: {fileID: 2800000, guid: 6a0b3d479ddd5434792ef846975011b4, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: pengu_pCube9SG_Normal
-    second: {fileID: 2800000, guid: 5e2e59caabd4daf47a8c4e29eed9ea75, type: 3}
+    second: {fileID: 2800000, guid: 1692c4c9bd155b044b21147f8c81d197, type: 3}
   - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: pengu_pCube9SG_Roughness
-    second: {fileID: 2800000, guid: 7710dc7c2cf2ae64facb29e7a664e50f, type: 3}
+    second: {fileID: 2800000, guid: 54d62abd40a023641b0f38d6fb6c1034, type: 3}
   materials:
     importMaterials: 1
     materialName: 0
