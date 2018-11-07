@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyPattern : MonoBehaviour {
+    Animator anim;
     [SerializeField]
     protected GameObject noteprefab;
     [SerializeField]
@@ -20,6 +21,8 @@ public class EnemyPattern : MonoBehaviour {
     float pt2_rate;
     float pt3_rate;
     [SerializeField]
+    bool firstAttack=false;
+    bool secondAttack=false;
 
     private void Start() {
         phase = 1;
@@ -28,6 +31,7 @@ public class EnemyPattern : MonoBehaviour {
         Invoke("firstLayer", 3);
         Invoke("startMusic", 3);
         enemyMaxHealth = GetComponent<EnemyHealth>().getMaxHealth();
+        anim = GetComponentInChildren<Animator>();
     }
 
     // Use this for initialization
@@ -46,7 +50,16 @@ public class EnemyPattern : MonoBehaviour {
         {
             wall.Shoot(noteprefab);
         }*/
-
+        if (firstAttack)
+        {
+            anim.SetTrigger("shotattack");
+            firstAttack = false;
+        }
+        if (secondAttack)
+        {
+            anim.SetTrigger("waveattack");
+            secondAttack = false;
+        }
         if (activeMusic != null) { print(activeMusic.time); }
         if (enemyHealth <= (enemyMaxHealth * 2 / 3) && activeMusic != null && activeMusic.time >= 13.69f && phase == 1) {
             phase = 2;
@@ -84,17 +97,20 @@ public class EnemyPattern : MonoBehaviour {
 
     private void firstLayer() {
         attack.Shoot(noteprefab, 0);
+        firstAttack = true;
         if (phase == 1) { Invoke("firstLayer", pt1_rate); }
     }
 
     private void secondLayer() {
         shockwave.Shoot(noteprefab, 0);
+        secondAttack = true;
         Invoke("secondLayer", pt2_rate);
     }
 
     private void thirdLayer()
     {
         attack.Shoot(noteprefab, 0);
+        firstAttack = true;
         Invoke("thirdLayer", pt3_rate);
     }
 }
