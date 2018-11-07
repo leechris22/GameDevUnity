@@ -19,10 +19,12 @@ public class LevelManager : MonoBehaviour {
     protected GameObject enemyUI;
     [SerializeField]
     protected GameObject gameOver;
+    [SerializeField]
+    protected GameObject story;
 
     // Use this for initialization
     void Start () {
-		
+
 	}
 
     // Update is called once per frame

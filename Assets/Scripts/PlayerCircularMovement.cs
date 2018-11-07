@@ -10,24 +10,18 @@ public class PlayerCircularMovement : MonoBehaviour {
 	private Rigidbody rb;
 	private bool isGrounded = false;
 	private bool canJump = false;
-	private Vector3 offset;
-	private Vector3 normalizedOffset;
-	private float distance;
-	[SerializeField]
-	private float safeDistance = 2.0f;   // safe distance between player and boss
 
 	void Start () {
 		rb = GetComponent<Rigidbody>();
-		offset = transform.position - boss.transform.position;
-	}
+    }
 
-	void OnCollisionStay() {
-		isGrounded = true;
-	}
+    void OnCollisionStay() {
+        isGrounded = true;
+    }
 
-	void OnCollisionExit() {
-		isGrounded = false;
-	}
+    void OnCollisionExit() {
+        isGrounded = false;
+    }
 
 	void Update () {
 		if (Input.GetKeyDown(KeyCode.X) && isGrounded) {
@@ -36,31 +30,28 @@ public class PlayerCircularMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		normalizedOffset = offset.normalized;
-		distance = Vector3.Distance(transform.position, boss.transform.position);
-		// Circular left
-		if (Input.GetKey(KeyCode.LeftArrow)) {
-			offset = Quaternion.AngleAxis(2, Vector3.up) * offset;
-		}
-		// Circular right
-        if (Input.GetKey(KeyCode.RightArrow)) {
-			offset = Quaternion.AngleAxis(-2, Vector3.up) * offset;
-		}
-		// Forward
-		if (Input.GetKey(KeyCode.UpArrow) && distance >= safeDistance) {
-			offset = offset - (normalizedOffset * 0.5f);
-        }
-		// Backward
-        if (Input.GetKey(KeyCode.DownArrow)) {
-            offset = offset + (normalizedOffset * 0.5f);
-        }
-		transform.position = new Vector3(boss.transform.position.x + offset.x, transform.position.y, boss.transform.position.z + offset.z);
-		transform.LookAt(boss.transform.position);
+        transform.LookAt(boss.transform.position);
+        Vector3 tempvelocity = Vector3.zero;
+        tempvelocity.y = rb.velocity.y;
 
-		/* Player jump */
-		if (canJump) {
-			Vector3 jump = new Vector3(0.0f, jumpForce, 0.0f);
-			rb.AddForce(jump, ForceMode.Impulse);
+		// Circular movement
+		if (Input.GetKey(KeyCode.LeftArrow)) {
+            tempvelocity -= transform.right * speed;
+        } else if (Input.GetKey(KeyCode.RightArrow)) {
+            tempvelocity += transform.right * speed;
+        }
+
+        // Forward and backward
+        if (Input.GetKey(KeyCode.UpArrow)) {
+            tempvelocity += transform.forward * speed;
+        } else if (Input.GetKey(KeyCode.DownArrow)) {
+            tempvelocity -= transform.forward * speed;
+        }
+        rb.velocity = tempvelocity;
+
+        /* Player jump */
+        if (canJump) {
+			rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
 			canJump = false;
 		}
 	}
