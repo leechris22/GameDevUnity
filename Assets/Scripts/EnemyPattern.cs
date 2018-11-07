@@ -16,12 +16,16 @@ public class EnemyPattern : MonoBehaviour {
     private int phase;
     AudioSource[] music;
     AudioSource activeMusic;
+    float pt1_rate;
+    float pt2_rate;
+    float pt3_rate;
+    [SerializeField]
 
     private void Start() {
         phase = 1;
         activeMusic = null;
         music = GetComponents<AudioSource>();
-        Invoke("starterBeat", 3);
+        Invoke("firstLayer", 3);
         Invoke("startMusic", 3);
         enemyMaxHealth = GetComponent<EnemyHealth>().getMaxHealth();
     }
@@ -64,30 +68,33 @@ public class EnemyPattern : MonoBehaviour {
         if (phase == 1) {
             music[0].Play();
             activeMusic = music[0];
+            pt1_rate = music[0].clip.length / 8f;
         } else if (phase == 2) {
             music[0].Stop();
             music[1].Play();
             activeMusic = music[1];
+            pt2_rate = music[1].clip.length / 8f;
         } else if (phase == 3) {
             music[1].Stop();
             music[2].Play();
             activeMusic = music[2];
+            pt3_rate = music[2].clip.length / 4f;
         }
     }
 
-    private void starterBeat() {
-        attack.Shoot(noteprefab);
-        if (phase != 3) { Invoke("starterBeat", 1.7f); }
+    private void firstLayer() {
+        attack.Shoot(noteprefab, 0);
+        if (phase == 1) { Invoke("firstLayer", pt1_rate); }
     }
 
     private void secondLayer() {
-        shockwave.Shoot(noteprefab);
-        Invoke("secondLayer", 1.7f);
+        shockwave.Shoot(noteprefab, 0);
+        Invoke("secondLayer", pt2_rate);
     }
 
     private void thirdLayer()
     {
-        attack.Shoot(noteprefab);
-        Invoke("thirdLayer", 3.4f);
+        attack.Shoot(noteprefab, 0);
+        Invoke("thirdLayer", pt3_rate);
     }
 }
