@@ -28,6 +28,9 @@ public class LevelManagerLevel3 : LevelManager {
             player.SetActive(true);
             enemy.SetActive(true);
         }
+        if (Input.GetKey(KeyCode.G) && Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Alpha1)) {
+            enemy.GetComponent<EnemyHealth>().Damaged(298);
+        }
     }
 
 
