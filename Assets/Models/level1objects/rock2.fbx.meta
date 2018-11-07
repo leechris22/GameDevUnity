@@ -145,6 +145,7 @@ ModelImporter:
     2300024: pSphere56
     2300026: tree_skinny:pCube4
     2300028: trunk:pCube3
+    2300030: //RootNode
     3300000: pCube11
     3300002: pCube12
     3300004: pCube13
@@ -160,6 +161,7 @@ ModelImporter:
     3300024: pSphere56
     3300026: tree_skinny:pCube4
     3300028: trunk:pCube3
+    3300030: //RootNode
     4300000: pSphere35
     4300002: pSphere36
     4300004: pCube4
