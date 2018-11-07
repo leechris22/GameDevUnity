@@ -742,7 +742,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61af37d7476376b42b6d6e87ac47b190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000000
+  maxHealth: 100
   healthbar: {fileID: 1130523998}
   healthText: {fileID: 1017679487}
   levelManager: {fileID: 1248181494}
@@ -772,7 +772,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boss: {fileID: 394485154}
   speed: 10
-  jumpForce: 10
+  jumpForce: 5
 --- !u!1 &285326434
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,8 +1022,8 @@ MonoBehaviour:
   target: {fileID: 253989156}
   ai:
   - {fileID: 394485157}
---- !u!135 &394485159
-SphereCollider:
+--- !u!136 &394485159
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -1031,9 +1031,10 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 2
+  m_Height: 5
+  m_Direction: 1
+  m_Center: {x: 0, y: 2, z: 0}
 --- !u!4 &394485162
 Transform:
   m_ObjectHideFlags: 0
@@ -1073,6 +1074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 1482596919406720, guid: 0d3da520df6aee74b94d9cd115b61b56, type: 2}
+  player: {fileID: 253989156}
 --- !u!82 &394485167
 AudioSource:
   m_ObjectHideFlags: 0

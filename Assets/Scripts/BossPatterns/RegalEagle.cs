@@ -51,7 +51,7 @@ public class RegalEagle : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            attack.Wall(50, 0);
+            attack.Wall(50, 0, false);
         }
 
         if (activeMusic != null) { print(activeMusic.time); }
@@ -116,7 +116,7 @@ public class RegalEagle : MonoBehaviour {
 
     private void thirdLayer()
     {
-        attack.Wall(50, (int)starting_dir);
+        attack.Wall(50, (int)starting_dir, false);
         Invoke("thirdLayer", pt3_rate);
     }
 }
