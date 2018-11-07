@@ -45,7 +45,7 @@ public class PlayerHealth : MonoBehaviour {
     }
 
     // On collision with bullet, take damage
-    private void OnCollisionEnter(Collision collision) {
+    private void OnTriggerEnter(Collider collision) {
         if (collision.gameObject.CompareTag("EnemyBullet")) {
             Damaged(1);
             Destroy(collision.gameObject);

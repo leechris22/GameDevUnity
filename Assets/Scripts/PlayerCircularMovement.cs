@@ -7,9 +7,9 @@ public class PlayerCircularMovement : MonoBehaviour {
 	private GameObject boss;
 	public float speed = 2.0f;
 	public float jumpForce = 5.0f;
+    public float maxdistance;
 	private Rigidbody rb;
 	private bool isGrounded = false;
-	private bool canJump = false;
     private Animator anim;
 
 	void Start () {
@@ -22,10 +22,8 @@ public class PlayerCircularMovement : MonoBehaviour {
         Vector3 tempvelocity = Vector3.zero;
 
 		// Circular movement
-		if (Input.GetKey(KeyCode.LeftArrow)) {
             anim.SetBool("left", true);
             tempvelocity -= transform.right * speed;
-        } else if (Input.GetKey(KeyCode.RightArrow)) {
             anim.SetBool("right", true);
             tempvelocity += transform.right * speed;
         } else
@@ -35,10 +33,8 @@ public class PlayerCircularMovement : MonoBehaviour {
         }
 
         // Forward and backward
-        if (Input.GetKey(KeyCode.UpArrow)) {
             anim.SetBool("forward", true);
             tempvelocity += transform.forward * speed;
-        } else if (Input.GetKey(KeyCode.DownArrow) && Vector3.Distance(transform.position, boss.transform.position) < 15) {
             anim.SetBool("backward", true);
             tempvelocity -= transform.forward * speed;
         } else {

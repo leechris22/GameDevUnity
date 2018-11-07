@@ -16,9 +16,9 @@ public class Attack : MonoBehaviour {
     public void Shoot(int duration) {
         note = Instantiate<GameObject>(prefab);
         note.transform.position = transform.position + transform.forward * 3;
-        Vector3 direction = player.position + player.velocity;
-        direction.y = 0.5f;
-        note.transform.rotation = transform.rotation * Quaternion.LookRotation(transform.InverseTransformPoint(direction));
+        Quaternion direction = transform.rotation * Quaternion.LookRotation(transform.InverseTransformPoint(player.position + player.velocity));
+        direction = Quaternion.Euler(0, direction.eulerAngles.y, direction.eulerAngles.z);
+        note.transform.rotation = direction;
         note.GetComponent<Rigidbody>().AddForce(note.transform.forward * 1000);
         if (duration != -1) {
             Destroy(note, duration);
