@@ -1,31 +1,14 @@
 fileFormatVersion: 2
-guid: 85ce3933eab896d42a365a2c799d95c8
+guid: a3604f07380f7a848a50046e0d5dfd36
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: cluster2Handle
-    100004: e_anten
-    100006: E_handle
-    100008: ffd1Base
-    100010: ffd1Lattice
-    100012: hip
-    100014: lean
-    100016: S_anten
-    100018: S_handle
     400000: //RootNode
-    400002: cluster2Handle
-    400004: e_anten
-    400006: E_handle
-    400008: ffd1Base
-    400010: ffd1Lattice
-    400012: hip
-    400014: lean
-    400016: S_anten
-    400018: S_handle
-    7400000: Take 001
-    9500000: //RootNode
-    2186277476908879412: ImportLogs
+    2100000: aiStandardSurface1
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pPlane1
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -78,7 +61,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
@@ -103,7 +86,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 0
   humanoidOversampling: 1
   additionalBone: 0
   userData: 

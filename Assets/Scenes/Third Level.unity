@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44824535, g: 0.49827206, b: 0.5755818, a: 1}
+  m_IndirectSpecularColor: {r: 0.44824475, g: 0.49827188, b: 0.5755814, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1068,6 +1068,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &451420231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 451420232}
+  - component: {fileID: 451420234}
+  - component: {fileID: 451420233}
+  m_Layer: 5
+  m_Name: StoryUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &451420232
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451420231}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1132953905}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &451420233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451420231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &451420234
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 451420231}
+  m_CullTransparentMesh: 0
 --- !u!1 &616631985
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,7 +1564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &759708054
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1536,9 +1605,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boss: {fileID: 1711313578}
-  speed: 2
-  jumpForce: 8
-  safeDistance: 2
+  speed: 10
+  jumpForce: 10
 --- !u!135 &759708057
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2116,6 +2184,7 @@ RectTransform:
   - {fileID: 1191193047}
   - {fileID: 387650876}
   - {fileID: 27333672}
+  - {fileID: 451420232}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2812,11 +2881,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e782482094b84c478320eccdd694e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  enemy: {fileID: 0}
+  player: {fileID: 759708053}
+  enemy: {fileID: 1711313578}
   playerUI: {fileID: 2010641770}
   enemyUI: {fileID: 1191193046}
   gameOver: {fileID: 27333671}
+  story: {fileID: 451420231}
   ending: {fileID: 387650875}
 --- !u!4 &1565664474
 Transform:
@@ -2843,13 +2913,13 @@ GameObject:
   - component: {fileID: 1711313588}
   - component: {fileID: 1711313587}
   - component: {fileID: 1711313586}
-  - component: {fileID: 1711313591}
   - component: {fileID: 1711313585}
   - component: {fileID: 1711313584}
   - component: {fileID: 1711313583}
   - component: {fileID: 1711313581}
   - component: {fileID: 1711313580}
   - component: {fileID: 1711313579}
+  - component: {fileID: 1711313591}
   - component: {fileID: 1711313593}
   - component: {fileID: 1711313592}
   - component: {fileID: 1711313582}
@@ -2859,7 +2929,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1711313579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2871,6 +2941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d18989f8a620fe946916185860b346b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 759708053}
   size: 50
   spacing: 0
   hole: 0
@@ -2885,6 +2956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d886a811c5b8dd47b2571b3b88ca926, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 759708053}
   size: 50
   spacing: 0
 --- !u!114 &1711313581
@@ -2898,6 +2970,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d7240f6063e7e4ebaf1243c903caea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 759708053}
 --- !u!82 &1711313582
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2907,7 +2980,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b7ba874a85000bb4da87531fb032f6c8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: feeb525694b08c940b3d2bd14dee2f4e, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.75
   m_Pitch: 1
@@ -3123,13 +3196,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1711313578}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fc75889e73a5b148b9a9128de38ce88, type: 3}
+  m_Script: {fileID: 11500000, guid: 36feb0c8b56817945b7069b19ae36e96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   noteprefab: {fileID: 1482596919406720, guid: 0d3da520df6aee74b94d9cd115b61b56, type: 2}
   attack: {fileID: 1711313581}
   shockwave: {fileID: 1711313580}
   wall: {fileID: 1711313579}
+  player: {fileID: 759708053}
 --- !u!82 &1711313592
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3139,7 +3213,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: a814a317ca85f9d469e4fab4c0a70a5f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 14b523e68028703478144e01ae41cb68, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.75
   m_Pitch: 1
@@ -3234,7 +3308,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6ffdca77c00cd014e8fb025d64dca5ee, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a3de647d1c87ec24e8e5826f8dd88762, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.75
   m_Pitch: 1
