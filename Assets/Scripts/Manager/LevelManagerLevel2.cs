@@ -11,8 +11,23 @@ public class LevelManagerLevel2 : LevelManager {
     private GameObject nextLevel;
 
     // Use this for initialization
-    void Start() {
+    void Start () {
+        if (Story.level2_intro) {
+            story.SetActive(true);
+        }
+        if (!story.activeSelf) {
+            player.SetActive(true);
+            enemy.SetActive(true);
+        }
+	}
 
+    override protected void Update() {
+        if (story.activeSelf && Input.GetKeyDown(KeyCode.Space)) {
+            story.SetActive(false);
+            Story.level2_intro = false;
+            player.SetActive(true);
+            enemy.SetActive(true);
+        }
     }
 
     // Events when the game ends

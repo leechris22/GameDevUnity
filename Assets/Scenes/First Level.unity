@@ -1183,7 +1183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &394485155
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3363,13 +3363,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eba20e18008b8e04490966a4ce030e23, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  enemy: {fileID: 0}
+  player: {fileID: 253989151}
+  enemy: {fileID: 394485154}
   playerUI: {fileID: 285326434}
   enemyUI: {fileID: 1154609061}
   gameOver: {fileID: 1475259486}
+  story: {fileID: 1826785988}
   nextLevel: {fileID: 910532519}
-  story: {fileID: 1826785990}
 --- !u!4 &1248181495
 Transform:
   m_ObjectHideFlags: 0
@@ -4496,7 +4496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1826785989
 RectTransform:
   m_ObjectHideFlags: 0
