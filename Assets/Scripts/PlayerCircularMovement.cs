@@ -21,20 +21,23 @@ public class PlayerCircularMovement : MonoBehaviour {
         transform.LookAt(boss.transform.position);
         Vector3 tempvelocity = Vector3.zero;
 
-		// Circular movement
+        // Circular movement
+        if (Input.GetKey(KeyCode.A)) {
             anim.SetBool("left", true);
             tempvelocity -= transform.right * speed;
+        } else if (Input.GetKey(KeyCode.D)) {
             anim.SetBool("right", true);
             tempvelocity += transform.right * speed;
-        } else
-        {
+        } else {
             anim.SetBool("left", false);
             anim.SetBool("right", false);
         }
 
         // Forward and backward
+        if (Input.GetKey(KeyCode.W)) {
             anim.SetBool("forward", true);
             tempvelocity += transform.forward * speed;
+        } else if (Input.GetKey(KeyCode.S) && Vector3.Distance(transform.position, boss.transform.position) < maxdistance) {
             anim.SetBool("backward", true);
             tempvelocity -= transform.forward * speed;
         } else {

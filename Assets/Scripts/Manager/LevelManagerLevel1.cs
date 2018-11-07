@@ -36,5 +36,7 @@ public class LevelManagerLevel1 : LevelManager {
         enemyUI.SetActive(false);
         nextLevel.SetActive(true);
         Data.level2 = true;
+        player.SetActive(false);
+        enemy.SetActive(false);
     }
 }

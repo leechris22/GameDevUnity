@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class RegalEagle : MonoBehaviour {
     [SerializeField]
-    protected GameObject noteprefab;
-    [SerializeField]
     private Attack attack;
     [SerializeField]
     private GameObject player;
@@ -41,7 +39,7 @@ public class RegalEagle : MonoBehaviour {
     private void Update()
     {
         enemyHealth = GetComponent<EnemyHealth>().getHealth();
-        if (Input.GetKeyDown(KeyCode.Q))
+/*        if (Input.GetKeyDown(KeyCode.Q))
         {
             attack.Shoot(-1);
         }
@@ -52,9 +50,9 @@ public class RegalEagle : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.E))
         {
             attack.Wall(50, 0, false);
-        }
+        }*/
 
-        if (activeMusic != null) { print(activeMusic.time); }
+//        if (activeMusic != null) { print(activeMusic.time); }
         if (enemyHealth <= (enemyMaxHealth * 2 / 3) && activeMusic != null && activeMusic.time >= 5.75f && phase == 1)
         {
             phase = 2;
