@@ -4476,6 +4476,10 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: a3604f07380f7a848a50046e0d5dfd36, type: 3}
+      propertyPath: m_Name
+      value: Ground
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3604f07380f7a848a50046e0d5dfd36, type: 3}
   m_IsPrefabAsset: 0
