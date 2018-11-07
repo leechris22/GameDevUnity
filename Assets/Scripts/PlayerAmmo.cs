@@ -27,5 +27,6 @@ public class PlayerAmmo : MonoBehaviour {
         note.GetComponent<Rigidbody>().AddForce(face * 1000);
         yield return new WaitForSeconds(fireInterval);
         allowFire = true;
+        Destroy(note, 3);
     }
 }
