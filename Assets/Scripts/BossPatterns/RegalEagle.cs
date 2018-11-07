@@ -47,11 +47,11 @@ public class RegalEagle : MonoBehaviour {
         enemyHealth = GetComponent<EnemyHealth>().getHealth();
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            attack.Shoot(noteprefab, 0);
+            attack.Shoot(-1);
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            shockwave.Shoot(noteprefab, 1);
+            attack.Shockwave(50);
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
@@ -114,7 +114,7 @@ public class RegalEagle : MonoBehaviour {
 
     private void secondLayer()
     {
-        attack.Shoot(noteprefab, 0);
+        attack.Shoot(-1);
         Invoke("secondLayer", pt2_rate);
     }
 

@@ -8,10 +8,6 @@ public class EnemyPattern : MonoBehaviour {
     protected GameObject noteprefab;
     [SerializeField]
     private Attack attack;
-    [SerializeField]
-    private Shockwave shockwave;
-    [SerializeField]
-    private ShockwaveHole wall;
     private int enemyHealth;
     private int enemyMaxHealth;
     private int phase;
@@ -96,20 +92,20 @@ public class EnemyPattern : MonoBehaviour {
     }
 
     private void firstLayer() {
-        attack.Shoot(noteprefab, 0);
+        attack.Shoot(-1);
         firstAttack = true;
         if (phase == 1) { Invoke("firstLayer", pt1_rate); }
     }
 
     private void secondLayer() {
-        shockwave.Shoot(noteprefab, 0);
+        attack.Shockwave(50);
         secondAttack = true;
         Invoke("secondLayer", pt2_rate);
     }
 
     private void thirdLayer()
     {
-        attack.Shoot(noteprefab, 0);
+        attack.Shoot(-1);
         firstAttack = true;
         Invoke("thirdLayer", pt3_rate);
     }
