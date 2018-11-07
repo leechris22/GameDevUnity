@@ -597,7 +597,7 @@ MonoBehaviour:
   boss: {fileID: 1063230269}
   speed: 10
   jumpForce: 5
-  maxdistance: 15
+  maxdistance: 45
 --- !u!114 &122291982
 MonoBehaviour:
   m_ObjectHideFlags: 0
