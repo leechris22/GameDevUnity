@@ -1,9 +1,79 @@
 fileFormatVersion: 2
-guid: c7df42215fe8f0443a57721b74f258cc
+guid: be5bdc6236ddd6346b12a54b9a26f857
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    2186277476908879412: ImportLogs
+    100000: head
+    100002: hip
+    100004: joint1
+    100006: L_backtoe
+    100008: L_foot
+    100010: L_innertoe
+    100012: L_knee
+    100014: L_outtoe
+    100016: L_shoulder
+    100018: L_thigh
+    100020: L_tip_B
+    100022: L_tip_E
+    100024: L_wing
+    100026: lowback
+    100028: midback
+    100030: neck
+    100032: R_backtoe
+    100034: R_foot
+    100036: R_innertoe
+    100038: R_knee
+    100040: R_outtoe
+    100042: R_shoulder
+    100044: R_thigh
+    100046: R_tip_B
+    100048: R_tip_E
+    100050: R_wing
+    100052: tailend
+    100054: tailmid
+    100056: tailstart
+    100058: tailtip
+    100060: tucan:bird:pCube9
+    100062: //RootNode
+    100064: upback
+    400000: head
+    400002: hip
+    400004: joint1
+    400006: L_backtoe
+    400008: L_foot
+    400010: L_innertoe
+    400012: L_knee
+    400014: L_outtoe
+    400016: L_shoulder
+    400018: L_thigh
+    400020: L_tip_B
+    400022: L_tip_E
+    400024: L_wing
+    400026: lowback
+    400028: midback
+    400030: neck
+    400032: R_backtoe
+    400034: R_foot
+    400036: R_innertoe
+    400038: R_knee
+    400040: R_outtoe
+    400042: R_shoulder
+    400044: R_thigh
+    400046: R_tip_B
+    400048: R_tip_E
+    400050: R_wing
+    400052: tailend
+    400054: tailmid
+    400056: tailstart
+    400058: tailtip
+    400060: tucan:bird:pCube9
+    400062: //RootNode
+    400064: upback
+    2100000: aiStandardSurface1
+    4300000: tucan:bird:pCube9
+    7400000: death
+    9500000: //RootNode
+    13700000: tucan:bird:pCube9
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -55,8 +125,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
