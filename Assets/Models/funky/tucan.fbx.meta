@@ -75,6 +75,11 @@ ModelImporter:
     13700000: tucan:bird:pCube9
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aiStandardSurface1
+    second: {fileID: 2100000, guid: 9305b6ab84b82df4a8cd88dc93707ebf, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: initialShadingGroup_Base_Color

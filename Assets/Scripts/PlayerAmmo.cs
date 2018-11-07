@@ -11,7 +11,7 @@ public class PlayerAmmo : MonoBehaviour {
 
 	// Update is called once per frame
 	private void Update () {
-        if (Input.GetKey(KeyCode.E) && allowFire) {
+        if ((Input.GetKey(KeyCode.E) || Input.GetKey(KeyCode.UpArrow)) && allowFire) {
             StartCoroutine(ShootNote());
         }
     }
