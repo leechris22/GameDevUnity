@@ -33,18 +33,6 @@ public class EnemyPattern : MonoBehaviour {
     private void Update()
     {
         enemyHealth = GetComponent<EnemyHealth>().getHealth();
-        /*if (Input.GetKeyDown(KeyCode.Q))
-        {
-            attack.Shoot(noteprefab);
-        }
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            shockwave.Shoot(noteprefab);
-        }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            wall.Shoot(noteprefab);
-        }*/
         if (firstAttack)
         {
             anim.SetTrigger("shotattack");
@@ -55,7 +43,6 @@ public class EnemyPattern : MonoBehaviour {
             anim.SetTrigger("waveattack");
             secondAttack = false;
         }
-        if (activeMusic != null) { print(activeMusic.time); }
         if (enemyHealth <= (enemyMaxHealth * 2 / 3) && activeMusic != null && activeMusic.time >= 13.69f && phase == 1) {
             phase = 2;
             startMusic();
