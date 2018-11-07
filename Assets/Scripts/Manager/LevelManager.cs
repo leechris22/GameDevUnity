@@ -22,19 +22,6 @@ public class LevelManager : MonoBehaviour {
     [SerializeField]
     protected GameObject story;
 
-    // Use this for initialization
-    void Start () {
-
-	}
-
-    // Update is called once per frame
-    virtual protected void Update () {
-        // Reset the scene on key down R
-        if (Input.GetKeyDown(KeyCode.R)) {
-            SceneManager.LoadScene(1);
-        }
-    }
-
     // Events when the game ends
     virtual public void NextLevel() {}
 

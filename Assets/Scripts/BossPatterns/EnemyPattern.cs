@@ -5,8 +5,6 @@ using UnityEngine;
 public class EnemyPattern : MonoBehaviour {
     Animator anim;
     [SerializeField]
-    protected GameObject noteprefab;
-    [SerializeField]
     private Attack attack;
     private int enemyHealth;
     private int enemyMaxHealth;
@@ -78,6 +76,7 @@ public class EnemyPattern : MonoBehaviour {
     }
 
     private void firstLayer() {
+        print("start first layer");
         attack.Shoot(-1);
         firstAttack = true;
         if (phase == 1) { Invoke("firstLayer", pt1_rate); }

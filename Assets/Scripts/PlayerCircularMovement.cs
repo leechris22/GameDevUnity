@@ -15,11 +15,7 @@ public class PlayerCircularMovement : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
     }
 
-    void OnCollisionStay() {
-        isGrounded = true;
-    }
-
-	void Update () {
+	void FixedUpdate () {
         transform.LookAt(boss.transform.position);
         Vector3 tempvelocity = Vector3.zero;
 
@@ -33,16 +29,23 @@ public class PlayerCircularMovement : MonoBehaviour {
         // Forward and backward
         if (Input.GetKey(KeyCode.UpArrow)) {
             tempvelocity += transform.forward * speed;
-        } else if (Input.GetKey(KeyCode.DownArrow)) {
+        } else if (Input.GetKey(KeyCode.DownArrow) && Vector3.Distance(transform.position, boss.transform.position) < 15) {
             tempvelocity -= transform.forward * speed;
         }
         tempvelocity.y = rb.velocity.y;
         rb.velocity = tempvelocity;
 
         /* Player jump */
-        if (Input.GetKey(KeyCode.X) && isGrounded) {
+        if (Input.GetKey(KeyCode.Space) && isGrounded) {
 			rb.AddForce(new Vector3(0, jumpForce, 0), ForceMode.Impulse);
-            isGrounded = false;
         }
+    }
+
+    private void OnCollisionStay(Collision collision) {
+        isGrounded = true;
+    }
+
+    private void OnCollisionExit(Collision collision) {
+        isGrounded = false;
     }
 }
