@@ -16,7 +16,6 @@ public class EnemyPattern : MonoBehaviour {
     float pt1_rate;
     float pt2_rate;
     float pt3_rate;
-    [SerializeField]
     bool firstAttack=false;
     bool secondAttack=false;
 

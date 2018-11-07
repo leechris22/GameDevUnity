@@ -8,10 +8,6 @@ public class RegalEagle : MonoBehaviour {
     [SerializeField]
     private Attack attack;
     [SerializeField]
-    private Shockwave shockwave;
-    [SerializeField]
-    private ShockwaveHole wall;
-    [SerializeField]
     private GameObject player;
     private int enemyHealth;
     private int enemyMaxHealth;
@@ -55,7 +51,7 @@ public class RegalEagle : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            wall.Shoot(noteprefab, 0);
+            attack.Wall(50, 0);
         }
 
         if (activeMusic != null) { print(activeMusic.time); }
@@ -108,7 +104,7 @@ public class RegalEagle : MonoBehaviour {
 
     private void firstLayer()
     {
-        shockwave.Shoot(noteprefab, 0);
+        attack.Shockwave(50);
         Invoke("firstLayer", pt1_rate);
     }
 
@@ -120,7 +116,7 @@ public class RegalEagle : MonoBehaviour {
 
     private void thirdLayer()
     {
-        wall.Shoot(noteprefab, (int)starting_dir);
+        attack.Wall(50, (int)starting_dir);
         Invoke("thirdLayer", pt3_rate);
     }
 }
