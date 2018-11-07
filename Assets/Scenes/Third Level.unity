@@ -285,7 +285,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 53619fd565e55d849b6084db0e90986b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.181
+      value: 1.05
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 53619fd565e55d849b6084db0e90986b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2099,7 +2099,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 43be86cf12227fe4f923609d91d7dd65, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -146.9
+      value: -161.6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 43be86cf12227fe4f923609d91d7dd65, type: 3}
       propertyPath: m_LocalPosition.z
@@ -5534,7 +5534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path:
   - {x: 20, y: -2, z: 0}
-  - {x: 20, y: 2, z: 0}
+  - {x: 20, y: 4, z: 0}
   targetRadius: 1
 --- !u!54 &1711313587
 Rigidbody:
