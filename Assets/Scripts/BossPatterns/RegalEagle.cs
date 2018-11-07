@@ -8,10 +8,6 @@ public class RegalEagle : MonoBehaviour {
     [SerializeField]
     private Attack attack;
     [SerializeField]
-    private Shockwave shockwave;
-    [SerializeField]
-    private ShockwaveHole wall;
-    [SerializeField]
     private GameObject player;
     private int enemyHealth;
     private int enemyMaxHealth;
@@ -26,9 +22,8 @@ public class RegalEagle : MonoBehaviour {
     private void Start()
     {
         phase = 1;
-        Invoke("startphasethreeeee", 1);
         activeMusic = null;
-        /*music = GetComponents<AudioSource>();
+        music = GetComponents<AudioSource>();
         Invoke("firstLayer", 3);
         Invoke("firstLayer", 4.1f);
         Invoke("firstLayer", 4.6f);
@@ -39,7 +34,7 @@ public class RegalEagle : MonoBehaviour {
         Invoke("firstLayer", 8.2f);
         Invoke("firstLayer", 8.4f);
         Invoke("startMusic", 3);
-        enemyMaxHealth = GetComponent<EnemyHealth>().getMaxHealth();*/
+        enemyMaxHealth = GetComponent<EnemyHealth>().getMaxHealth();
     }
 
     // Use this for initialization
@@ -48,18 +43,18 @@ public class RegalEagle : MonoBehaviour {
         enemyHealth = GetComponent<EnemyHealth>().getHealth();
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            attack.Shoot(noteprefab, 0);
+            attack.Shoot(-1);
         }
         if (Input.GetKeyDown(KeyCode.W))
         {
-            shockwave.Shoot(noteprefab, 1);
+            attack.Shockwave(50);
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
-            wall.Shoot(noteprefab, 0);
+            attack.Wall(50, 0, false);
         }
 
-        /*if (activeMusic != null) { print(activeMusic.time); }
+        if (activeMusic != null) { print(activeMusic.time); }
         if (enemyHealth <= (enemyMaxHealth * 2 / 3) && activeMusic != null && activeMusic.time >= 5.75f && phase == 1)
         {
             phase = 2;
@@ -69,7 +64,7 @@ public class RegalEagle : MonoBehaviour {
             Invoke("secondLayer", 3.52f);
             Invoke("secondLayer", 5.3f);
         }
-        else if (/*enemyHealth <= (enemyMaxHealth / 3) && activeMusic != null && activeMusic.time >= 5.75f &&*/if (phase == 2)
+        else if (enemyHealth <= (enemyMaxHealth / 3) && activeMusic != null && activeMusic.time >= 5.75f && phase == 2)
         {
             phase = 3;
             starting_dir = Mathf.Atan2(Mathf.Abs(player.transform.position.x - transform.position.x), Mathf.Abs(player.transform.position.z - transform.position.z)) * Mathf.Rad2Deg % 50;
@@ -103,30 +98,25 @@ public class RegalEagle : MonoBehaviour {
             music[1].Stop();
             music[2].Play();
             activeMusic = music[2];
-            pt3_rate = 5.75f;//music[2].clip.length / 8f;
+            pt3_rate = music[2].clip.length / 8f;
         }
     }
 
     private void firstLayer()
     {
-        shockwave.Shoot(noteprefab, 0);
+        attack.Shockwave(50);
         Invoke("firstLayer", pt1_rate);
     }
 
     private void secondLayer()
     {
-        attack.Shoot(noteprefab, 0);
+        attack.Shoot(-1);
         Invoke("secondLayer", pt2_rate);
     }
 
     private void thirdLayer()
     {
-        wall.Shoot(noteprefab, (int)starting_dir);
-        //Invoke("thirdLayer", 5.75f);
-    }
-
-    private void startphasethreeeee()
-    {
-        phase = 2;
+        attack.Wall(50, (int)starting_dir, false);
+        Invoke("thirdLayer", pt3_rate);
     }
 }
